@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejército del Peru | Reclutamiento</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="logo">EJÉRCITO DEL PERU</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#mision">Misión</a></li>
+            <li><a href="#vision">Visión</a></li>
+            <li><a href="#registro">Unirse</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <header id="inicio" class="hero">
+        <div class="caja-texto">
+            <h1>VALOR Y DISCIPLINA</h1>
+            <p>Servir a la patria es el honor más grande de un ciudadano, quien no vive para servir no sirve para vivir.</p>
+        </div>
+    </header>
+        <div class="mision-vision-container">
+            <section id="mision" class="info-card">
+                <h2>Nuestra Misión</h2>
+                <p>Defender la soberanía, la integridad territorial...</p>
+            </section>
+
+            <section id="vision" class="info-card">
+                <h2>Nuestra Visión</h2>
+                <p>Ser una fuerza militar moderna, altamente profesional...</p>
+             </section>
+        </div>
+
+        <!-- Formulario de Captación -->
+        <section id="registro" class="form-section">
+            <h2>REGISTRO DE ASPIRANTES</h2>
+            <p>Completa tus datos para iniciar el proceso de selección.</p>
+            <form id="dataForm">
+                <input type="text" id="nombre" placeholder="Nombres y Apellidos" required>
+                <input type="number" id="dni" placeholder="Número de Identidad (DNI)" required>
+                <input type="email" id="correo" placeholder="Correo Electrónico" required>
+                <select id="rango">
+                    <option value="Soldado">Aspirante a Tecnico</option>
+                    <option value="Oficial">Escuela de Oficiales</option>
+                </select>
+                <button type="submit" class="btn-enviar">ENVIAR DATOS</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Pop-up de Confirmación -->
+    <div id="popup" class="overlay">
+        <div class="popup-content">
+            <div class="alert-icon">⚠️</div>
+            <h2>DATOS PROCESADOS</h2>
+            <p id="msg-confirmacion"></p>
+            <button onclick="cerrarPopup()" class="btn-popup">CERRAR SESIÓN</button>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
